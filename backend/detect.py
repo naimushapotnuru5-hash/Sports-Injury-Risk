@@ -2,10 +2,10 @@ from ultralytics import YOLO
 import cv2
 
 # Load YOLOv8 model
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8n-pose.pt")
 
 # Open video
-video = cv2.VideoCapture("../datasets/sports.mp4")
+video = cv2.VideoCapture("datasets/sports.mp4")
 if not video.isOpened():
     print("Video not found")
     exit()
